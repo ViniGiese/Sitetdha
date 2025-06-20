@@ -13,25 +13,29 @@
       color: #333;
     }
     header {
-      background-color: #fbb03b;
-      padding: 2rem;
+      background: url('https://images.unsplash.com/photo-1552611052-33e04de081de?auto=format&fit=crop&w=1920&q=80') no-repeat center center;
+      background-size: cover;
+      padding: 5rem 2rem;
       text-align: center;
       color: white;
     }
     header h1 {
+      font-size: 3rem;
       margin: 0;
-      font-size: 2.5rem;
+      text-shadow: 1px 1px 3px rgba(0,0,0,0.6);
     }
     header p {
-      font-size: 1.2rem;
+      font-size: 1.3rem;
+      margin-top: 0.5rem;
+      text-shadow: 1px 1px 3px rgba(0,0,0,0.4);
     }
     .content {
-      max-width: 800px;
-      margin: 2rem auto;
-      padding: 1rem;
+      max-width: 900px;
+      margin: 3rem auto;
+      padding: 2rem;
       background: white;
-      border-radius: 10px;
-      box-shadow: 0 0 20px rgba(0,0,0,0.05);
+      border-radius: 16px;
+      box-shadow: 0 0 30px rgba(0,0,0,0.08);
     }
     .content h2 {
       color: #f78c2a;
@@ -46,11 +50,23 @@
       padding: 1rem 2rem;
       text-decoration: none;
       font-weight: bold;
-      border-radius: 8px;
+      font-size: 1.1rem;
+      border-radius: 12px;
       margin-top: 2rem;
+      transition: background 0.3s ease;
     }
     .button:hover {
       background-color: #e67e22;
+    }
+    .hero-img {
+      text-align: center;
+      margin-bottom: 2rem;
+    }
+    .hero-img img {
+      width: 100%;
+      max-width: 700px;
+      border-radius: 12px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
     }
     footer {
       text-align: center;
@@ -65,7 +81,12 @@
     <h1>BrincaTEA em Casa</h1>
     <p>Atividades sensoriais mensais para crianças com autismo</p>
   </header>
+
   <div class="content">
+    <div class="hero-img">
+      <img src="https://images.unsplash.com/photo-1614027164843-43031be6d8f2?auto=format&fit=crop&w=800&q=80" alt="criança brincando sensorialmente">
+    </div>
+
     <h2>Transforme a rotina da sua criança com carinho e conexão</h2>
     <p>Receba 12 módulos com atividades sensoriais, desafios e bônus criados especialmente para famílias de crianças com TEA. Você vai estimular o desenvolvimento de forma lúdica, acessível e afetuosa.</p>
 
@@ -81,6 +102,7 @@
 
     <a class="button" href="#">Quero o BrincaTEA em Casa</a>
   </div>
+
   <footer>
     &copy; 2025 BrincaTEA. Todos os direitos reservados.
   </footer>
